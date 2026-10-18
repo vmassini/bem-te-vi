@@ -1,0 +1,23 @@
+# dependências e saídas do build (geradas por `npm install` e `npm run build`)
+node_modules/
+www/
+*.apk
+*.aab
+*.log
+
+# prévias individuais do Blender (as folhas de contato ficam em docs/imagens) e capturas de teste
+arte/saida/previa_*.png
+capturas/
+
+# Android: arquivos gerados pelo Gradle e pelo `npx cap sync`
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/capacitor-cordova-android-plugins/
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
+android/app/src/main/assets/capacitor.plugins.json
+
+# cache do Python (scripts do Blender)
+__pycache__/

@@ -1,0 +1,23 @@
+{
+  "name": "bem-te-vi",
+  "version": "1.0.0",
+  "description": "Jogo do bem-te-vi: parceiro, ninho e filhotes numa praça 3D",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node build.mjs && node serve.mjs",
+    "android:sync": "node build.mjs && npx cap sync android",
+    "android:apk": "node build.mjs && npx cap sync android && cd android && gradlew assembleDebug",
+    "modelos": "node arte/gerar_modelos.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@capacitor/android": "^7.6.9",
+    "@capacitor/core": "^7.6.9",
+    "three": "^0.149.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.6.9"
+  }
+}
